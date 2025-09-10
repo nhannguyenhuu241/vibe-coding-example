@@ -1,0 +1,5 @@
+# Ignore các file quan trọng
+config/production.js
+.env
+database/migrations/*
+*.backup.js
