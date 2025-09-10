@@ -1,0 +1,95 @@
+# Mobinet NextGen Test Configuration
+# Environment Settings
+environment:
+  base_url: "https://mobinet-nextgen-staging.example.com"
+  api_base_url: "https://api.mobinet-nextgen-staging.example.com"
+  
+# Browser Configuration
+browser:
+  name: "chrome"  # chrome, firefox, edge
+  headless: false
+  window_size: "1920,1080"
+  page_load_timeout: 30
+  implicit_wait: 10
+  explicit_wait: 20
+
+# Test User Credentials
+users:
+  revenue_collection:
+    username: "revenue_user@mobinet.com"
+    password: "SecurePass123!"
+    role: "Revenue Collection"
+  
+  customer_care:
+    username: "care_user@mobinet.com" 
+    password: "SecurePass123!"
+    role: "Customer Care"
+  
+  admin_user:
+    username: "admin_user@mobinet.com"
+    password: "SecurePass123!"
+    role: "Administrator"
+
+# Test Data Configuration
+test_data:
+  contracts:
+    valid_contract_id: "CON001234567"
+    overdue_contract_id: "CON987654321"
+    paid_contract_id: "CON555666777"
+  
+  reasons:
+    level1:
+      - "Customer Financial Issues"
+      - "System Technical Problems" 
+      - "Service Quality Issues"
+      - "Billing Disputes"
+    
+    level2:
+      financial_issues:
+        - "Temporary Financial Hardship"
+        - "Job Loss"
+        - "Medical Expenses"
+      technical_problems:
+        - "Network Connectivity"
+        - "Device Issues"
+        - "Software Problems"
+
+# Performance Thresholds
+performance:
+  page_load_max: 5  # seconds
+  reason_load_max: 2  # seconds
+  form_submit_max: 3  # seconds
+  history_load_max: 2  # seconds
+  integration_max: 5  # seconds
+
+# External System Integration Settings
+external_systems:
+  customer_debt_management:
+    enabled: true
+    timeout: 10
+    
+  customer_management:
+    enabled: true
+    timeout: 10
+    
+  customer_care_platform:
+    enabled: true
+    timeout: 10
+
+# Reporting Configuration
+reporting:
+  screenshot_on_failure: true
+  video_recording: false
+  allure_results_dir: "reports/allure-results"
+  html_report_dir: "reports/html"
+  
+# Logging Configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file_path: "logs/automation.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Retry Configuration
+retry:
+  max_attempts: 3
+  delay_between_attempts: 2  # seconds

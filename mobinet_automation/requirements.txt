@@ -1,0 +1,48 @@
+# Selenium WebDriver automation requirements for Mobinet NextGen
+# Core Selenium dependencies
+selenium==4.15.2
+webdriver-manager==4.0.1
+
+# Test framework and assertions  
+pytest==7.4.3
+pytest-html==4.1.1
+pytest-xdist==3.3.1
+pytest-rerunfailures==12.0
+
+# Data handling and utilities
+pandas==2.1.4
+openpyxl==3.1.2
+PyYAML==6.0.1
+Faker==20.1.0
+
+# Logging and reporting
+allure-pytest==2.13.2
+pytest-json-report==1.5.0
+colorlog==6.8.0
+
+# Date/time handling
+python-dateutil==2.8.2
+
+# HTTP requests for API integration testing
+requests==2.31.0
+
+# Screen capture for test evidence
+Pillow==10.1.0
+
+# Configuration management
+python-decouple==3.8
+
+# Parallel execution support
+pytest-parallel==0.1.1
+
+# Test data generation
+factory-boy==3.3.0
+
+# Database connectivity for test data setup
+pymongo==4.6.0
+
+# Performance monitoring
+psutil==5.9.6
+
+# Wait strategies and conditions
+selenium-wire==5.1.0

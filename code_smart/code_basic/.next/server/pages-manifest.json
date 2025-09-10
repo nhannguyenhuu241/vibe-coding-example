@@ -1,0 +1,10 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/non-payment-reason": "pages/non-payment-reason.js",
+  "/api/non-payment-history": "pages/api/non-payment-history.js",
+  "/api/non-payment-reasons/level2": "pages/api/non-payment-reasons/level2.js",
+  "/api/non-payment-reasons/level1": "pages/api/non-payment-reasons/level1.js",
+  "/api/non-payment-reasons/level3": "pages/api/non-payment-reasons/level3.js"
+}
